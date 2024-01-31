@@ -74,8 +74,8 @@ header > .container-flex > ul > li > a:hover {
     color: var(--cor6);
 }
 
-main {
-
+main > #sobre {
+    margin-top: 16px;
 }
 
 main > #sobre > .container-flex {
@@ -231,6 +231,11 @@ main > #contato > .container-flex > .container-contato > #formulario input, text
     padding: 8px;
     font-size: 16px;
     margin-bottom: 8px;
+    color: var(--cor1);
+}
+
+main > #contato > .container-flex > .container-contato > #formulario textarea {
+    height: 150px;
 }
 
 main > #contato > .container-flex > .container-contato > #formulario button {
@@ -245,6 +250,10 @@ main > #contato > .container-flex > .container-contato > #formulario button {
 main > #contato > .container-flex > .container-contato > #formulario button:hover {
     background-color: var(--cor5);
     color: var(--cor1);
+}
+
+main > #contato > .container-flex > .container-contato > #formulario input:focus, textarea:focus {
+    outline-color: var(--cor1);
 }
 
 main > #contato > .container-flex > .container-contato > #redes {
