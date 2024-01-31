@@ -20,21 +20,88 @@
     </header>
     <main>
         <section id="sobre">
-            <img src="images/Foto-GabrielAguiar.jpg" alt="Foto do Gabriel Aguiar, criador do site">
-            <h1>Sobre mim</h1>
-            <p>Meu nome Gabriel Aguiar, tenho 25 anos. Com relação a jogos, sou bastante eclético, contudo meus investir meu tempo de jogo especialmente em <abbr title="Jogos de interpretação de papéis (Roleplay, em inglês)">RPG's</abbr> e <abbr title="Jogos de tiro em primeira pessoa">FPS's</abbr>, em geral.</p> Também tenho costumo ter maior apreço em jogos cooperativos, multijogador ou que tenham uma grande comunidade engajada.
-            <p>Na <a href="#recomendacoes">próxima seção</a>, estão alguns dos meus jogos favoritos e suas recomendações, assim como links de lojas virtuais que tem o jogo a venda. Aproveite !</p>
+            <div class="container-flex">
+                <div class="heading">
+                    <img src="images/Foto-GabrielAguiar.jpg" alt="Foto do Gabriel Aguiar, criador do site">
+                    <p>Gabriel Aguiar</p>
+                </div>
+                <article>
+                    <h2>Sobre mim</h2>
+                    <p>Meu nome Gabriel Aguiar, tenho 25 anos. Com relação a jogos, sou bastante eclético, contudo meus investir meu tempo de jogo especialmente em <abbr title="Jogos de interpretação de papéis (Roleplay, em inglês)">RPG's</abbr> e <abbr title="Jogos de tiro em primeira pessoa">FPS's</abbr>, em geral. Também costumo ter maior apreço em jogos cooperativos, multijogador ou que tenham uma grande comunidade engajada. </p>
+                    <p>Na <a href="#recomendacoes">próxima seção</a>, estão alguns dos meus jogos favoritos e suas recomendações, assim como links de lojas virtuais que tem o jogo a venda. Aproveite !</p>
+                </article>
+            </div>
         </section>
         <section id="recomendacoes">
-
+            <div class="container-flex">
+                <h2>Recomendações</h2>
+                <div class="container-recomendacao">
+                    <div>
+                        <img src="images/ai-generated-8498591_640.png" alt="Samurai ao por do sol">
+                        <h3>Sekiro: Shadows Die Twice</h3>
+                        <p>
+                            É um RPG focado em combate de espadas feito pela famosa desenvolvedora FromSoftware. Ambientado no Japão da era Sengoku, conta com diveras referências à mitologia japonesa.  Por mais que apresente uma dificuldade elevada, é um jogo recompensador e artisticamente impecável.
+                        </p>
+                        <ul>
+                            <li><a href="https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice__GOTY_Edition/" target="_blank"><img src="images/steam_logo_icon_206670.png" alt="Logo Steam"></a></li>
+                            <li><a href="https://www.playstation.com/pt-br/games/sekiro-shadows-die-twice/" target="_blank"><img src="images/playstation_black_logo_icon_147094.png" alt="Logo Playstation"></a></li>
+                            <li><a href="https://www.xbox.com/pt-BR/games/store/sekiro-shadows-die-twice-edicao-jogo-do-ano/BQD5WRRP2D6Q" target="_blank"><img src="images/xbox_black_logo_icon_147047.png" alt="Logo Xbox"></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="images/abandoned-factory-1513194_640.jpg" alt="Fábrica abandonada">
+                        <h3>Lethal Company</h3>
+                        <p>
+                            É um jogo cooperativo de sobrevivência em que um grupo de até 4 jogadores trabalham juntos para recuperar sucata enquanto evitam ser pegos por diferentes criaturas aleatoriamente geradas. O jogo é bem simples em questão gráfica e de jogabilidade, mas a diversão é garantida.
+                        </p>
+                        <ul>
+                            <li><a href="https://store.steampowered.com/app/1966720/Lethal_Company/" target="_blank"><img src="images/steam_logo_icon_206670.png" alt="Logo Steam"></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="images/illithid-8263787_640.jpg" alt="Monstro devorador de mentes">
+                        <h3>Baldur's Gate 3</h3>
+                        <p>
+                            Este é um RPG baseado no sistema de RPG Dungeons & Dragons, ganhador do prêmio de Jogo do Ano em 2023. Neste você desvenda uma história intrigante sozinho ou com mais 4 amigos enquanto personaliza sua experiência e personagens ao seu gosto. É um jogo indispensável aos fãs de RPG.
+                        </p>
+                        <ul>
+                            <li><a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" target="_blank"><img src="images/steam_logo_icon_206670.png" alt="Logo Steam"></a></li>
+                            <li><a href="https://store.playstation.com/pt-br/product/UP3526-PPSA14001_00-0507384846053057" target="_blank"><img src="images/playstation_black_logo_icon_147094.png" alt="Logo Playstation"></a></li>
+                            <li><a href="https://www.xbox.com/pt-BR/games/store/baldurs-gate-3/9ND58LQTG09T" target="_blank"><img src="images/xbox_black_logo_icon_147047.png" alt="Logo Xbox"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="contato">
-
+            <div class="container-flex">
+                <h2>Contato</h2>
+                <div class="container-contato">
+                    <section id="formulario">
+                        <h3>Receba novas recomendações</h3>
+                        <form>
+                        <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+                        <input type="email" name="email" id="email" placeholder="E-mail" required>
+                        <input type="tel" name="tel" id="cel" placeholder="Celular (Opicional)">
+                        <textarea name="msg" id="msg" placeholder="Mensagem... (Opicional)"></textarea>
+                        <button type="submit">Enviar</button>
+                        </form>
+                    </section>
+                    <section id="redes">
+                        <h3>Redes e contato</h3>
+                        <ul>
+                            <li><a href="https://github.com/Aguiar-gabrielcosta" target="_blank"><img src="images/github-6980894_640.png" alt="GitHub Logo"></a></li>
+                            <li><a href="https://www.instagram.com/bisnaga_aguiar/" target="_blank"><img src="images/instagram-1675670_640.png" alt="Instagram Logo"></a></li>
+                            <li><a href="mailto:aguiar.gc@hotmail.com"><img src="images/letter-1132703_640.png" alt="Email Logo"></a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <div class="container-flex">
-            <p>Feito por <a href="https://github.com/Aguiar-gabrielcosta">Gabriel Aguiar</a>.</p>
+            <p>Feito por <a href="https://github.com/Aguiar-gabrielcosta" target="_blank">Gabriel Aguiar</a> em 01/2024.</p>
         </div>
     </footer>
 </body>

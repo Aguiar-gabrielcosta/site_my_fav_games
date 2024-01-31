@@ -5,6 +5,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    /*Fonte padrão*/
+    font-family: var(--font-padrao);
 }
 
 :root { /* Variáveis */
@@ -41,7 +44,7 @@ header {
     margin: 0 auto;
 }
 
-header > .container-flex {
+header > .container-flex, header a {
     font-family: var(--font-titulos);
     font-weight: normal;
     padding: 8px;
@@ -71,10 +74,198 @@ header > .container-flex > ul > li > a:hover {
     color: var(--cor6);
 }
 
+main {
+
+}
+
+main > #sobre > .container-flex {
+    align-items: flex-start;
+    max-width: 800px;
+}
+
+main > #sobre > .container-flex > .heading {
+    padding: 16px;
+    align-self: center;
+} 
+
+main > #sobre > .container-flex > .heading > img  {
+    border: 4px solid var(--cor1);
+    border-radius: 50%;
+    height: 240px;
+    aspect-ratio: 1;
+    object-fit: cover;
+} 
+
+main > #sobre > .container-flex > .heading > p  {
+    font-family: var(--font-titulos);
+    font-size: 18px;
+    color: var(--cor1);
+    text-align: center;
+    margin-top: 16px;
+}
+
+main > #sobre > .container-flex > article {
+    padding: 16px;
+}
+
+main > #sobre > .container-flex > article > h2 {
+    font-family: var(--font-titulos);
+    font-weight: normal;
+    font-size: 24px;
+    color: var(--cor1);
+    margin-bottom: 16px;
+}
+
+main > #sobre > .container-flex > article > p{
+    margin-bottom: 8px;
+    color: var(--cor1);
+}
+
+main > #sobre > .container-flex > article > p > abbr{
+    text-decoration: none;
+    color: var(--cor4);
+}
+
+main > #sobre > .container-flex > article > p > a{
+    text-decoration: none;
+    color: var(--cor4);
+}
+
+main > #sobre > .container-flex > article > p > a:hover{
+    color: var(--cor5);
+}
+
+main > #recomendacoes > .container-flex {
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+}
+
+main > #recomendacoes > .container-flex > h2{
+    font-family: var(--font-titulos);
+    font-weight: normal;
+    font-size: 24px;
+    color: var(--cor1);
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+main > #recomendacoes > .container-flex > .container-recomendacao {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+main > #recomendacoes > .container-flex > .container-recomendacao div {
+    width: 300px;
+    margin-bottom: 35px;
+}
+
+main > #recomendacoes > .container-flex > .container-recomendacao > div > img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+}
+
+main > #recomendacoes > .container-flex > .container-recomendacao h3 {
+    font-family: var(--font-titulos);
+    font-weight: normal;
+    font-size: 18px;
+    color: var(--cor1);
+    margin: 8px 0;
+}
+
+main > #recomendacoes > .container-flex > .container-recomendacao p {
+    color: var(--cor1);
+    text-align: justify;
+    margin-bottom: 8px;
+}
+
+main > #recomendacoes > .container-flex > .container-recomendacao li {
+    display: inline;
+}
+
+main > #recomendacoes > .container-flex > .container-recomendacao > div > ul > li > a > img {
+    height: 30px;
+    width: 30px;
+}
+
+main > #contato > .container-flex {
+    flex-direction: column;
+    max-width: 1000px;
+}
+
+main > #contato > .container-flex > h2 {
+    font-family: var(--font-titulos);
+    font-weight: normal;
+    font-size: 24px;
+    color: var(--cor1);
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+main > #contato > .container-flex > .container-contato {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 8px;
+}
+
+main > #contato > .container-flex > .container-contato h3 {
+    font-family: var(--font-titulos);
+    font-weight: normal;
+    color: var(--cor1);
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+main > #contato > .container-flex > .container-contato > #formulario {
+    margin: 15px;
+}
+
+main > #contato > .container-flex > .container-contato > #formulario input, textarea, button {
+    display: block;
+    width: 300px;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+main > #contato > .container-flex > .container-contato > #formulario button {
+    background-color: var(--cor1);
+    color: var(--cor5);
+    font-family: var(--font-titulos);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+main > #contato > .container-flex > .container-contato > #formulario button:hover {
+    background-color: var(--cor5);
+    color: var(--cor1);
+}
+
+main > #contato > .container-flex > .container-contato > #redes {
+    margin: 15px
+}
+
+main > #contato > .container-flex > .container-contato > #redes li {
+    display: inline;
+}
+
+main > #contato > .container-flex > .container-contato > #redes img {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
 footer{
     background-color: var(--cor1);
     font-family: var(--font-padrao);
     padding: 8px;
+    margin-top: 50px;
 }
 
 footer > .container-flex {
